@@ -52,14 +52,14 @@ export default {
         customer_id: "1"
       },
       firstNameRules: [
-        v => !!v || 'Your first name is requried!',
+        v => !!v || 'Your first name is required!',
       ],
       lastNameRules: [
         v => !!v || 'Your last name is required!',
       ],
       emailRules: [
         v => !!v || 'Your email is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+        v => /.+@.+\..+/.test(v) || 'E-mail field must be valid',
       ],
       passwordRules: [
         v => !!v || 'Your password is required',
